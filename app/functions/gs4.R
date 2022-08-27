@@ -69,7 +69,6 @@ get_EN_term <-
     
   }
 
-
 create_html_enru <- 
   function(.data){
     
