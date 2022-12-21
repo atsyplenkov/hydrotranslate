@@ -5,7 +5,7 @@ Writing scientific articles in English can be challenging, especially when it co
 >Our dictionary is intended for hydrologists who need help interpreting and
 using English-language terms.
 
-PhD hydrologists with experience writing in English review each entry:
+PhD hydrologists with experience writing in English review each entry: 
 
 - Dr. Anatoly Tsyplenkov, Lomonosov Moscow State University
 - DScn. Sergey Chalov, Lomonosov Moscow State University
