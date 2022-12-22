@@ -3,7 +3,7 @@
 # This script is cloning git repository and restarts shiny server to make edits come to life.
 # If there are any problems with permissions try to run:
 #
-# > chmod u+x ./update-server.sh
+# > chmod u+x ./update.sh
 #
 # see: https://www.shells.com/l/en-US/tutorial/How-to-Fix-Shell-Script-Permission-Denied-Error-in-Linux
 
