@@ -12,3 +12,5 @@ PhD hydrologists with experience writing in English review each entry:
 - Dr. Vsevolod Moreydo, Water Problems Institute RAS
 
 The `Add words` tab allows you to participate in the project by adding new words. Every entry is reviewed by mentors. If you are interested in becoming a mentor for your language, please send an email to `admin[at]hydrowiki.org`!
+
+Cheers!
