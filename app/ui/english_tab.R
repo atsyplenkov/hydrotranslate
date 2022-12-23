@@ -1,8 +1,8 @@
 # load gs4 data -----------------------------------------------------------
 source("functions/gs4.R")
 
-db <- get_data()
-# db <- get_gs4_dt()
+# db <- get_data()
+db <- get_gs4_dt()
 
 en_list <- pull(db, en_term)
 
