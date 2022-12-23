@@ -3,7 +3,7 @@ suppressPackageStartupMessages({
   library(googlesheets4)
   library(dtplyr)
   library(dplyr, warn.conflicts = FALSE)
-  library(qs)
+  # library(qs)
   library(fs)
   library(emo)
   library(fresh)
