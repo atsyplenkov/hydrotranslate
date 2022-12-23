@@ -12,43 +12,44 @@ get_gs4_dt <-
     
   }
 
-gs4_to_qs <- 
-  function(url = sheet_url){
-    
-    gs4_deauth()
-    
-    df <- 
-      read_sheet(url,
-                 sheet = 1)
-    
-    qs::qsave(df, "data/hydrowiki_df.qs")
-    
-  }
-
-get_data <- 
-  function(){
-    
-    qs_date <- 
-      fs::file_info("data/hydrowiki_df.qs")$modification_time %>% 
-      as.Date()
-    
-    if (qs_date == Sys.Date() & !is.na(qs_date)) {
-      
-      message("Uploading existing version of the dataset…")
-      
-      db <- qs::qread("data/hydrowiki_df.qs") %>% 
-        lazy_dt()
-      
-    } else {
-      
-      message("Downloading a new version of the dataset…")
-      
-      gs4_to_qs()
-      
-      db <- qs::qread("data/hydrowiki_df.qs") %>% 
-        lazy_dt()
-    }
-  }
+# gs4_to_qs <- 
+#   function(url = sheet_url){
+#     
+#     gs4_deauth()
+#     
+#     df <- 
+#       read_sheet(url,
+#                  sheet = 1)
+#     
+#     qs::qsave(df, "data/hydrowiki_df.qs")
+#     
+#   }
+# 
+# get_data <- 
+#   function(){
+#     
+#     qs_date <- 
+#       fs::file_info("data/hydrowiki_df.qs")$modification_time %>% 
+#       as.Date()
+#     
+#     if (qs_date == Sys.Date() & !is.na(qs_date)) {
+#       
+#       message("Uploading existing version of the dataset…")
+#       
+#       db <- qs::qread("data/hydrowiki_df.qs") %>% 
+#         lazy_dt()
+#       
+#     } else {
+#       
+#       message("Downloading a new version of the dataset…")
+#       
+#       # gs4_to_qs()
+#       
+#       
+#       db <- qs::qread("data/hydrowiki_df.qs") %>% 
+#         lazy_dt()
+#     }
+#   }
 
 # custom functions --------------------------------------------------------
 get_RU_term <- 
